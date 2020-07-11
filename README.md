@@ -1,5 +1,4 @@
 # Angular
-<<<<<<< HEAD
 
 CRUD con Angular
 
@@ -22,5 +21,3 @@ CRUD con Angular
   $ ng serve --o
   
 ```
-=======
->>>>>>> 0d52b9660d13d02e5e17e0e72569c4e7ce387b72
