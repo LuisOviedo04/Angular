@@ -1,0 +1,33 @@
+<div class="container wrapper">
+    <div class="row">
+
+        <!-- Issue table -->
+        <div class="col-md-12">
+            <div class="inner">
+                <h3>Comentarios de Usuarios</h3>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Usuario</th>
+                            <th scope="col">Comentario</th>
+                            <th scope="col">Opción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let comments of CommentList">
+                            <th scope="row">{{comments.id}}</th>
+                            <td>{{comments.username}}</td>
+                            <td>{{comments.comment}}</td>
+                            <td>
+                                <button type="button" class="btn btn-success btn-sm move-right" [routerLink]="['/editComment/', comments.id]">Editar comentario</button>
+                                <button type="button" class="btn btn-danger btn-sm" (click)="deleteComment(comments)">Borrar comentario</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
