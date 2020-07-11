@@ -6,6 +6,7 @@ CPL - Cartagena Potholes Locator
 ## Requerimientos
 - [Angular](https://angular.io/cli)
 - [NPM](https://www.npmjs.com/)
+- [Bootstrap](https://getbootstrap.com)
 - [JSON Server Fake](https://jsonplaceholder.typicode.com/)
 
 ### Ejecutar 
