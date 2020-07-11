@@ -27,7 +27,8 @@ export class AddCommentComponent implements OnInit {
   addComment() {
     this.commentForm = this.fb.group({
       username: [''],
-      comment: ['']
+      comment: [''],
+      email: ['']
     })
   }
 

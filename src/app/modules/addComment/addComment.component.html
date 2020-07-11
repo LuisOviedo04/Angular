@@ -7,12 +7,17 @@
             <form [formGroup]="commentForm" (ngSubmit)="submitForm()" novalidate>
                 <div class="form-group">
                     <label>Usuario</label>
-                    <input type="text" formControlName="username" class="form-control" maxlength="20">
+                    <input type="text" formControlName="username" class="form-control" maxlength="50" placeholder="Su nombre aquí">
                 </div>
                 <div class="form-group">
                     <label>Comentario</label>
-                    <textarea class="form-control" formControlName="comment" rows="3" maxlength="50"></textarea>
+                    <textarea class="form-control" formControlName="comment" rows="3" maxlength="500" placeholder="Su comentario aquí"></textarea>
                 </div>
+                <div class="form-group">
+                    <label>Correo Electronico</label>
+                    <input type="email" class="form-control" formControlName="email" aria-describedby="emailHelp" placeholder="Su email aquí">
+                    <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su correo electrónico con nadie más.</small>
+                  </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
         </div>

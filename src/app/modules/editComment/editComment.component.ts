@@ -28,7 +28,8 @@ export class EditCommentComponent implements OnInit {
     this.CommentDataService.GetComment(id).subscribe((data) => {
       this.updateCommentForm = this.fb.group({
         username: [data.username],
-        comment: [data.comment]
+        comment: [data.comment],
+        email: [data.email]
       })
     })
   }
@@ -36,7 +37,8 @@ export class EditCommentComponent implements OnInit {
   updateForm(){
     this.updateCommentForm = this.fb.group({
       username: [''],
-      comment: ['']
+      comment: [''],
+      email: ['']
     })    
   }
 
